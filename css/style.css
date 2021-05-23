@@ -554,7 +554,6 @@ ET-LINE & SERVICES ICONS
     display: inline-block
 }
 
-
 /* "Web Design" icon */
 .et-icon-browser:before {
     content: "\e00c"
@@ -567,9 +566,6 @@ ET-LINE & SERVICES ICONS
 .et-icon-edit:before {
     content: "\e01c"
 }
-
-
-
 
 
 /*
