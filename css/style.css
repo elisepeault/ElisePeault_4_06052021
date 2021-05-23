@@ -440,10 +440,6 @@ h1 {
         overflow-x: hidden;
         position: relative;
     }
-    .bloc {
-        padding-left: constant(safe-area-inset-left);
-        padding-right: constant(safe-area-inset-right);
-    }
 }
 
 @media (max-width: 767px) {
@@ -547,7 +543,7 @@ ET-LINE & SERVICES ICONS
 
 .et-icon-browser, .et-icon-edit, .et-icon-presentation {
     font-family: et-line;
-    speak: none;
+    /*speak: never;*/
     font-style: normal;
     font-weight: 400;
     font-variant: normal;
