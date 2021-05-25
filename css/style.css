@@ -470,12 +470,12 @@ h1 {
         margin-left: 0;
         margin-right: 0;
     }
-    .site-navigation {
+    /*.site-navigation {
         position: inherit;
         transform: none;
         -webkit-transform: none;
         -ms-transform: none;
-    }
+    }*/
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
