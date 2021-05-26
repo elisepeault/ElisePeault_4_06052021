@@ -155,6 +155,11 @@ HEADER
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
 }
+/*utile ?*/
+.navbar.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 
 /*
 PRESENTATION Index
@@ -284,10 +289,58 @@ MEDIA QUERIES
     }
 }
 
+/*utile ?
+@media (min-width: 768px) {
+    .site-navigation {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translate(0, -50%);
+        -webkit-transform: translateY(-50%);
+    }
+    .nav > li .dropdown-menu a,
+    .nav > li .dropdown-menu a:hover {
+        color: #484848;
+    }
+    .nav-invert .site-navigation {
+        left: 0;
+        right: 0;
+    }
+    .nav-center {
+        text-align: center;
+    }
+    .nav-center .navbar-header {
+        width: 100%;
+    }
+    .nav-center .navbar-header,
+    .nav-center .navbar-brand,
+    .nav-center .nav > li {
+        float: none;
+        display: inline-block;
+    }
+    .nav-center .site-navigation {
+        position: relative;
+        width: 100%;
+        right: 0;
+        margin-right: 0px;
+        margin-top: 20px;
+    }
+    .nav-center.mini-nav .navbar-toggle {
+        float: none;
+        margin: 10px auto 0;
+    }
+}*/
+
+
+
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
         position: relative;
+    }
+    .bloc {
+        padding-left: 0;
+        padding-right: 0;
     }
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 10px!important;
@@ -301,7 +354,12 @@ MEDIA QUERIES
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
-
+    /*.site-navigation {
+        position: inherit;
+        transform: none;
+        -webkit-transform: none;
+        -ms-transform: none;
+    }*/
     /*.navbar.row {
         margin-left: 0;
         margin-right: 0;
@@ -315,12 +373,13 @@ MEDIA QUERIES
         padding-left: 15px;
         width: 100%;
     }
-    /*.navbar-collapse {
+    .navbar-collapse {
         padding: 0;
         overflow-x: hidden;
         -webkit-box-shadow: none;
         box-shadow: none;
-    }*/
+    }
+
     .navbar-brand img {
         height: 40px;
     }
