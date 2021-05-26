@@ -32,29 +32,27 @@
 	<body>
 		
 	<!-- HEADER -->
-	<header class="bloc l-bloc bloc-sm ">
-		<!--<div class="container bloc-sm">-->
-			<nav class="navbar row">
-				<div class="navbar-header">
-					<a class="navbar-brand" href="index.html">
-						<img src="img/la-chouette-agence.png" alt="atlanta web design logo"/>
-					</a>
-					<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
-						<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
-					</button>
-				</div>
-				<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
-					<ul class="site-navigation nav navbar-nav">
-						<li>
-							<a href="index.html">Accueil</a>
-						</li>
-						<li>
-							<a href="contact.html">Contact</a>
-						</li>
-					</ul>
-				</div>
-			</nav>
-		<!--</div>-->
+	<header class="bloc container ">
+		<nav class="navbar row">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="index.html">
+					<img src="img/la-chouette-agence.png" alt="atlanta web design logo"/>
+				</a>
+				<button id="nav-toggle" type="button" class="ui-navbar-toggle navbar-toggle" data-toggle="collapse" data-target=".navbar-1">
+					<span class="sr-only">Toggle navigation</span><span class="icon-bar"></span><span class="icon-bar"></span><span class="icon-bar"></span>
+				</button>
+			</div>
+			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
+				<ul class="nav navbar-nav">
+					<li>
+						<a href="index.html">Accueil</a>
+					</li>
+					<li>
+						<a href="contact.html">Contact</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
 	</header>
 	<!-- HEADER END -->
 
@@ -62,29 +60,27 @@
 	<main class="page-container">
 
 	<!-- CONTACT PRESENTATION -->
-	<section class="bloc bg-dots-bg bg-repeat bg-primary-color d-bloc bloc-bg-texture texture-paper">
-		<div class="container bloc-lg">
-			<div class="row">
-				<div class="col-sm-12">
-					<h1 class="text-center hero-bloc-text primary-color">
-						Parlons web design !
-					</h1>
-					<p class="text-center mg-lg primary-color tight-width-whitespace">
-						Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
-						Parlez-nous de votre projet en complétant le formulaire ci-dessous.
-					</p>
-				</div>
+	<section class="bloc bg-dots-bg bg-repeat bg-primary-color d-bloc bg-texture-paper">
+		<div class="row">
+			<div class="col-sm-12 bloc-lg">
+				<h1 class="text-center primary-color">
+					Parlons web design !
+				</h1>
+				<p class="text-center mg-md primary-color">
+					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
+					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
+				</p>
 			</div>
 		</div>
 	</section>
 	<!-- CONTACT PRESENTATION -->
 
-	<!-- CONTACT FORM -->
+	<!-- CONTACT FORM -->   <!--Ajouter h2 !!! "Nous contacter" "nous trouver"-->
 	<section class="bloc l-bloc">
 		<div class="container bloc-lg">
 			<div class="row">
 				<div class="col-sm-6">
-					<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+					<form id="form_1"> <!--novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
 						<div class="form-group">
 							<label>
 								Nom
@@ -105,7 +101,7 @@
 						</div>
 						<div class="form-group">
 							<label>
-								Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+								Brief de votre projet (Ajoutez autant de détails que nécessaire)
 							</label>
 							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
 						</div> 
@@ -116,7 +112,7 @@
 				</div>
 				<div class="col-sm-6">
 					<p>
-						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi
 					</p>
 				</div>
 			</div>
@@ -132,8 +128,8 @@
 	<!-- ScrollToTop Button END-->
 
 	<!-- FOOTER -->
-	<footer class="bg-primary-color">
-		<p class="hello">
+	<footer class="bloc bg-primary-color">
+		<p class="footer-text">
 			La chouette agence - Agence web basée à Lyon
 		</p>
 		<div class="social">

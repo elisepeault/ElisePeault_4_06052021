@@ -21,16 +21,30 @@ a:hover {
     cursor: pointer;
 }
 
-/* FORM CONTACT*/
-label {
-    font-weight: normal;
+    /* Text */
+p {
+    font-size: 11px;
 }
 
+h2 {
+    font-size: 22px;
+    line-height: 1.4em;
+}
+
+h3 {
+    font-size: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+}
+
+
+/* Containers */
 .bloc {
     width: 100%;
     clear: both;
     background: 50% 50% no-repeat;
-    padding: 0 50px;
+    padding: 20px 50px;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -51,31 +65,19 @@ label {
     padding: 50px;
 }
 
-/*.bloc-sm {
-    padding: 20px 50px;
-}*/
-
 .bg-repeat {
     background: repeat;
 }
 
-.bg-t-edge {
-    background: top no-repeat;
-}
-
-.bloc-bg-texture::before {
+.bg-texture-paper::before {
     content: "";
-    background-size: 2px 2px;
+    background: url("../img/texture-paper.png");
+    background-size: 280px 280px;
     position: absolute;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-}
-
-.texture-paper::before {
-    background: url("../img/texture-paper.png");
-    background-size: 280px 280px;
 }
 
 .b-parallax {
@@ -90,9 +92,6 @@ label {
     margin-top: 80px;
 }
 
-#bloc-1-hero h1 {
-    font-size: 32px;
-}
 
 /*
 HEADER
@@ -109,7 +108,7 @@ HEADER
     border: 0
 }
 
-/*.sr-only-focusable:active,
+.sr-only-focusable:active,
 .sr-only-focusable:focus {
     position: static;
     width: auto;
@@ -117,7 +116,7 @@ HEADER
     margin: 0;
     overflow: visible;
     clip: auto
-}*/
+}
 
 .navbar {
     margin-bottom: 0;
@@ -125,11 +124,7 @@ HEADER
 }
 
 .navbar-brand {
-    /*height: auto;*/
     padding: 3px 15px;
-    font-size: 25px;
-    font-weight: normal;
-    font-weight: 600;
     line-height: 44px;
 }
 
@@ -161,27 +156,41 @@ HEADER
     width: 26px;
 }
 
+/*
+PRESENTATION Index
+*/
+
+.presentation-title {
+    font-size: 38px;
+    text-align: center;
+}
+
+.bg-presentation {
+    background-image: url("../img/image-de-presentation.bmp");
+}
+
+.presentation-logo {
+    width: 100px;
+}
+
+
+
+
+
+
 /* titres portfolio */
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-.mg-lg {
-    margin-top: 10px;
-    margin-bottom: 40px;
-}
-
+/* Button */
 button {
     outline: none!important;
 }
 
 .btn-rd {
     border-radius: 40px;
-}
-
-.icon-md {
-    font-size: 30px!important;
 }
 
 .form-control {
@@ -204,21 +213,14 @@ button {
     margin-top: 6px;
 }
 
+/* ???? */
 a[data-lightbox] {
     position: relative;
     display: block;
     text-align: center;
 }
 
-.hero-bloc-text {
-    font-size: 38px;
-}
-
-p {
-    font-size: 11px;
-}
-
-/* centrer texte bannières et portfolio centre page*/
+/* centrer texte bannières et portfolio centre page utile ? */
 .tight-width-whitespace {
     max-width: 600px;
     margin: auto;
@@ -233,21 +235,6 @@ p {
     font-weight: 700;
 }
 
-h1 {
-    color: #333333!important;
-}
-
-h2 {
-    font-size: 22px;
-    line-height: 1.4em;
-}
-
-h3 {
-    font-size: 15px;
-    text-transform: uppercase;
-    font-weight: 700;
-    color: #333333!important;
-}
 /* A RETIRER */
 .white {
     color: #FFFFFF!important;
@@ -257,31 +244,6 @@ h3 {
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
-}
-
-.black-background {
-    background-color: rgba(165, 147, 99, 0.7);
-    padding: 40px;
-}
-
-/*Bg primary color (orange) */
-.bg-primary-color {
-    background-color: #F3976C;
-}
-
-/* text primary color */
-.primary-color {
-    color: #F3976C!important;
-}
-
-.btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
-}
-
-.btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
 }
 
 .bg-dots-bg {
@@ -296,9 +258,10 @@ h3 {
     background-image: url("../img/la-chouette-agence-banniere.jpg");
 }
 
-.bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
-}
+
+/*
+MEDIA QUERIES
+*/
 
 @media (max-width: 1024px) {
     .bloc {
@@ -338,10 +301,12 @@ h3 {
         border-top: 1px solid rgba(0, 0, 0, .2);
         float: none!important;
     }
+
     /*.navbar.row {
         margin-left: 0;
         margin-right: 0;
     }*/
+
     .nav > li {
         margin-top: 0;
         border-bottom: 1px solid rgba(0, 0, 0, .1);
@@ -434,11 +399,7 @@ FOOTER
     font-style: normal
 }
 
-footer {
-    padding: 20px 50px;
-}
-
-.social, .hello, .social__icon span {
+.social, .footer-text, .social__icon span {
     color: white;
     max-width: 600px;
     margin: auto;
@@ -446,7 +407,7 @@ footer {
 }
 
 .social__icon span {
-    font: normal 14px FontAwesome;
+    font: normal 30px FontAwesome;
     padding: 0 20px 0 20px;
 } 
 
@@ -470,3 +431,36 @@ footer {
     content: "\f17d"
 }
 
+/* FORM CONTACT*/
+label {
+    font-weight: normal;
+}
+
+
+
+
+/* Color */
+.black-background {
+    background-color: rgba(165, 147, 99, 0.7);
+    padding: 40px;
+}
+
+    /*Background primary color */
+.bg-primary-color {
+    background-color: #F3976C;
+}
+
+    /* text primary color */
+.primary-color {
+    color: #F3976C!important;
+}
+
+.btn-atomic-tangerine {
+    background: #F3976C;
+    color: #FFFFFF!important;
+}
+
+.btn-atomic-tangerine:hover {
+    background: #c27956!important;
+    color: #FFFFFF!important;
+}
