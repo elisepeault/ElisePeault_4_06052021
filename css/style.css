@@ -1,3 +1,32 @@
+/*
+FONTS
+*/
+
+/* Services icons */
+@font-face {
+    font-family: et-line;
+    src: url(../fonts/et-line.eot);
+    src: url(../fonts/et-line.eot?#iefix) format('embedded-opentype'), 
+    url(../fonts/et-line.woff) format('woff'), 
+    url(../fonts/et-line.ttf) format('truetype'), 
+    url(../fonts/et-line.svg#et-line) format('svg');
+    font-weight: 400;
+    font-style: normal
+}
+
+/* Arrow icons (Portfolio) & Social icons (Footer) */
+@font-face {
+    font-family: 'FontAwesome';
+    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
+    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
+    url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
+    url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
+    url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
+    font-weight: normal;
+    font-style: normal
+}
+
+
 /* 
 GENERAL
 */
@@ -27,8 +56,11 @@ p {
 }
 
 h2 {
-    font-size: 22px;
-    line-height: 1.4em;
+    font-size: 3rem;
+    font-weight: bold;
+    padding-bottom: 2rem;
+    color: #F3976C;
+    /*line-height: 1.4em;*/
 }
 
 h3 {
@@ -210,11 +242,131 @@ PORTFOLIO
 }
 
 
+
 /* titres portfolio */
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
 }
+
+/* portfolio organisé en 2 ligne => faire du flexbox ??????*/
+.portfolio-row {
+    margin-bottom: 44px;
+    margin-top: 50px;
+}
+
+
+a[data-lightbox] {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+a[data-lightbox]:hover::before {
+    content: "+";
+    font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial;
+    font-size: 32px;
+    width: 50px;
+    height: 50px;
+    margin-left: -25px;
+    border-radius: 50%;
+    background: rgba(0, 0, 0, .6);
+    color: #FFF;
+    font-weight: 100;
+    z-index: 1;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+}
+
+a[data-lightbox]:hover img {
+    opacity: 0.6;
+    -webkit-animation-fill-mode: none;
+    animation-fill-mode: none;
+}
+
+#lightbox-modal {
+    display: flex;
+    align-items: center;
+}
+
+#lightbox-modal .modal-dialog {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto 0;
+}
+
+#lightbox-modal .modal-dialog img {
+    max-height: 90vh;
+    margin: 0 auto;
+}
+
+.lightbox-caption {
+    padding: 20px;
+    color: #FFF;
+    background: rgba(0, 0, 0, .5);
+    position: absolute;
+    left: 15px;
+    right: 15px;
+    bottom: 5px;
+}
+
+.close-lightbox {
+    color: #FFF;
+    font-size: 30px;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 20;
+    background: rgba(0, 0, 0, .5);
+    border: none;
+    line-height: 30px;
+    padding: 0 9px 5px;
+    opacity: 0.3;
+}
+
+.close-lightbox:hover,
+.next-lightbox:hover,
+.prev-lightbox:hover {
+    opacity: 1.0;
+    color: #FFF;
+}
+
+.next-lightbox,
+.prev-lightbox {
+    font-size: 20px;
+    color: rgba(255, 255, 255, .9);
+    background: rgba(0, 0, 0, .5);
+    transition: all .2s ease-in-out;
+    position: absolute;
+    top: 45%;
+    z-index: 1;
+    opacity: 0.4;
+}
+
+.next-lightbox {
+    padding: 6px 8px 1px 13px;
+    right: 25px;
+}
+
+.prev-lightbox {
+    padding: 6px 13px 1px 10px;
+    left: 25px;
+}
+
+.snapshot-lb .modal-body {
+    padding-bottom: 45px;
+}
+
+.snapshot-lb .lightbox-caption {
+    padding: 0;
+    color: rgba(0, 0, 0, .5);
+    background: none;
+}
+
+
+
 
 /* Button */
 button {
@@ -272,11 +424,6 @@ a[data-lightbox] {
     color: #FFFFFF!important;
 }
 
-/* portfolio organisé en 2 ligne => faire du flexbox !*/
-.portfolio-row {
-    margin-bottom: 44px;
-    margin-top: 50px;
-}
 
 .bg-dots-bg {
     background-image: url("../img/dots-bg.png");
@@ -359,7 +506,6 @@ MEDIA QUERIES
 }*/
 
 
-
 @media (max-width: 767px) {
     .page-container {
         overflow-x: hidden;
@@ -435,17 +581,6 @@ MEDIA QUERIES
 ET-LINE & SERVICES ICONS
 */
 
-@font-face {
-    font-family: et-line;
-    src: url(../fonts/et-line.eot);
-    src: url(../fonts/et-line.eot?#iefix) format('embedded-opentype'), 
-    url(../fonts/et-line.woff) format('woff'), 
-    url(../fonts/et-line.ttf) format('truetype'), 
-    url(../fonts/et-line.svg#et-line) format('svg');
-    font-weight: 400;
-    font-style: normal
-}
-
 /* Services icons */
 .et-icon-browser, .et-icon-edit, .et-icon-presentation {
     font-family: et-line;
@@ -471,18 +606,13 @@ ET-LINE & SERVICES ICONS
 /*
 FOOTER
 */
-
-/*  Font Awesome 4.7.0 by @davegandy - http://fontawesome.io - @fontawesome - License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License) */
-
- @font-face {
-    font-family: 'FontAwesome';
-    src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
-    src: url('../fonts/fontawesome-webfont.eot?#iefix&v=4.7.0') format('embedded-opentype'), 
-    url('../fonts/fontawesome-webfont.woff2?v=4.7.0') format('woff2'), 
-    url('../fonts/fontawesome-webfont.woff?v=4.7.0') format('woff'), 
-    url('../fonts/fontawesome-webfont.ttf?v=4.7.0') format('truetype'), url('../fonts/fontawesome-webfont.svg?v=4.7.0#fontawesomeregular') format('svg');
-    font-weight: normal;
-    font-style: normal
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
 }
 
 .social, .footer-text, .social__icon span {
@@ -493,7 +623,7 @@ FOOTER
 }
 
 .social__icon span {
-    font: normal 30px FontAwesome;
+    font: normal 35px FontAwesome;
     padding: 0 20px 0 20px;
 } 
 
@@ -516,6 +646,16 @@ FOOTER
 .fa-dribbble:before {
     content: "\f17d"
 }
+
+/* Left & right arrow : Images visualisation  PORTFOLIO  !!!!!*/ 
+.fa-chevron-left:before {
+    content: "\f053"
+}
+.fa-chevron-right:before {
+    content: "\f054"
+}
+
+
 
 /* FORM CONTACT*/
 label {
