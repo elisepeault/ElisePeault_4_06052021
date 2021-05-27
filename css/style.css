@@ -179,8 +179,35 @@ PRESENTATION Index
 }
 
 
+/*
+SERVICES
+*/
+.services-presentation, .services-quote, .portfolio-presentation {
+    margin: auto;
+}
 
+.services-presentation, .portfolio-presentation {
+    max-width: 640px;
+    font-size: 2.2rem;
+}
 
+.services-quote {
+    max-width: 500px;
+    font-size: 2rem;
+    font-style: italic;
+}
+.services-quote__author {
+    font-size: 1.5rem;
+}
+
+/*
+PORTFOLIO
+*/
+
+.portfolio-presentation {
+    max-width: 450px;
+    font-size: 2.2rem;
+}
 
 
 /* titres portfolio */
