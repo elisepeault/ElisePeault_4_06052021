@@ -53,7 +53,7 @@ a:hover {
     /* Text */
 p {
     font-size: 18px;
-    text-align: justify;
+    /*text-align: justify;*/
     line-height: 1.5;
 }
 
@@ -92,7 +92,8 @@ h3 {
 }
 
 .bloc-lg {
-    padding: 100px 50px;
+    padding: 50px 50px;
+    /*padding: 100px 50px;*/
 }
 
 .bloc-md {
@@ -216,7 +217,6 @@ PRESENTATION Index
 .presentation-title strong {
     font-size: 26px;
     font-weight: normal;
-    color: white;
 }
 
 .bg-presentation {
@@ -259,6 +259,12 @@ PORTFOLIO
     max-width: 450px;
     font-size: 2.2rem;
 }
+
+/*
+CONTACT (Index)
+*/
+
+
 
 
 
@@ -423,9 +429,9 @@ a[data-lightbox] {
     text-align: center;
 }
 
-/* centrer texte bannières et portfolio centre page utile ? */
+/* Center "black-background" (banners) and portfolio */
 .tight-width-whitespace {
-    max-width: 600px;
+    max-width: 650px;
     margin: auto;
 }
 
@@ -440,7 +446,8 @@ a[data-lightbox] {
 
 /* A RETIRER */
 .white {
-    color: #FFFFFF!important;
+    color:rgb(238, 238, 238)!important;
+    /*color: #FFFFFF!important;*/
 }
 
 
@@ -686,7 +693,7 @@ label {
 
 /* Color */
 .black-background {
-    background-color: rgba(48, 48, 48, 0.7);
+    background-color: rgba(48, 48, 48, 0.9);
     /*background-color: rgba(165, 147, 99, 0.7);*/
     padding: 40px;
 }
