@@ -77,8 +77,8 @@
 	<!-- CONTACT FORM -->   <!--Ajouter h2 !!! "Nous contacter" "nous trouver"-->
 	<section class="bloc l-bloc">
 		<div class="container bloc-lg">
-			<div class="row">
-				<div class="col-sm-6">
+			<!--<div class="row">
+				<div class="col-sm-6">-->
 					<form id="form_1"> <!--novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
 						<div class="form-group">
 							<label>
@@ -108,13 +108,8 @@
 							Envoyer
 						</button>
 					</form>
-				</div>
-				<div class="col-sm-6">
-					<p>
-						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi
-					</p>
-				</div>
-			</div>
+				<!--</div>
+			</div>-->
 		</div>
 	</section>
 	<!-- CONTACT FORM END -->
@@ -128,22 +123,42 @@
 
 	<!-- FOOTER -->
 	<footer class="bloc primary-color-bg--darker ">
-		<p class="footer-text">
+		<p class="footer-text text-center">
 			La chouette agence - Agence web basée à Lyon
 		</p>
-		<div class="social">
-			<a class="social__icon" href="index.html">
-				<span class="fa fa-twitter icon-md"></span>
-			</a>
-			<a class="social__icon" href="index.html">
-				<span class="fa fa-facebook icon-md"></span>
-			</a>
-			<a class="social__icon" href="index.html">
-				<span class="fa fa-dribbble icon-md"></span>
-			</a>
-			<a class="social__icon" href="index.html">
-				<span class="fa fa-instagram icon-md"></span>
-			</a>
+		<div class="row">
+			<div class="social col-sm-6">
+				<h2 class="text-center">Nos réseaux sociaux</h2>
+				<div class="social-icon-flex text-center">
+					<a class="social__icon" href="index.html">
+						<span class="fa fa-twitter"></span>
+					</a>
+					<a class="social__icon" href="index.html">
+						<span class="fa fa-facebook"></span>
+					</a>
+					<a class="social__icon" href="index.html">
+						<span class="fa fa-dribbble"></span>
+					</a>
+					<a class="social__icon" href="index.html">
+						<span class="fa fa-instagram"></span>
+					</a>
+				</div>
+			</div>
+			<div class="location location-icon col-sm-6">
+				<h2 class="text-center">Nos coordonnées</h2>
+				<p>
+					<span class="fa fa-envelope"></span>
+					contact@lachouetteagence.com
+				</p>
+				<p>
+					<span class="fa fa-map-marker"></span> 
+					2 place Sathonay, 69001 Lyon
+				</p>
+				<p>
+					<span class="fa fa-calendar"></span>
+					Ouvert de 9h à 18h, du lundi au vendredi
+				</p>
+			</div>
 		</div>
 	</footer>
 	<!-- FOOTER END -->
