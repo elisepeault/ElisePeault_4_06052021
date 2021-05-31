@@ -50,7 +50,7 @@ a:hover {
     cursor: pointer;
 }
 
-    /* Text */
+/* Text */
 p {
     font-size: 18px;
     line-height: 1.5;
@@ -75,8 +75,8 @@ h3 {
     color: #333333!important;
 }
 
+/* Containers */
 
-    /* Containers */
 .bloc {
     width: 100%;
     clear: both;
@@ -103,10 +103,59 @@ h3 {
     padding: 50px;
 }
 
-    /* Background images & texture */
+    /* Center "black-background" (banners) and portfolio */
+.tight-width-whitespace {
+    max-width: 650px;
+    margin: auto;
+}
+
+/* Buttons */
+
+button {
+    outline: none!important;
+}
+
+.btn-rd {
+    border-radius: 40px;
+}
+
+.form-control {
+    border-color: rgba(0, 0, 0, .1);
+    box-shadow: none;
+}
+
+.scrollToTop {
+    width: 40px;
+    height: 40px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    opacity: 0;
+    z-index: 500;
+    transition: all .3s ease-in-out;
+}
+
+.scrollToTop span {
+    margin-top: 6px;
+}
+
+.cta-hero {
+    margin-top: 22px;
+    color: #FFFFFF!important;
+    text-transform: uppercase;
+    padding: 12px 28px 12px 28px;
+    font-size: 16px;
+    font-weight: 700;
+}
+
+/* Background images & texture */
     
 .bg-repeat {
     background: repeat;
+}
+
+.b-parallax {
+    background-attachment: fixed;
 }
 
 .bg-texture-paper::before {
@@ -120,12 +169,23 @@ h3 {
     right: 0;
 }
 
-.b-parallax {
-    background-attachment: fixed;
+.bg-dots-bg {
+    background-image: url("../img/dots-bg.png");
 }
 
+.bg-lines-h2-bg {
+    background-image: url("../img/lines-h2-bg.png");
+}
 
-/* voffset ???*/
+.bg-banniere {
+    background-image: url("../img/la-chouette-agence-banniere.jpg");
+}
+
+.bg-presentation {
+    background-image: url("../img/image-de-presentation.bmp");
+}
+
+    /* voffset ???*/
 .voffset {
     margin-top: 30px;
 }
@@ -136,7 +196,114 @@ h3 {
 
 
 /*
-HEADER
+    -  ET-LINE - Services icons  -
+*/
+
+    /* Services icons */
+.et-icon-browser, .et-icon-edit, .et-icon-presentation {
+    font-family: et-line;
+    font-size: 60px;
+    color: #364577;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
+}
+
+    /* "Web Design" icon */
+.et-icon-browser:before {
+    content: "\e00c"
+}
+    /* "Stratégie" icon */
+.et-icon-presentation:before {
+    content: "\e00e"
+}
+    /* "Illustrations" icon */
+.et-icon-edit:before {
+    content: "\e01c"
+}
+
+/*
+    -  FA - Social icons (footer) & arrow icons (Portfolio)  -
+*/
+.fa {
+    display: inline-block;
+    font: normal 14px FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+    /* Twitter icon */
+.fa-twitter:before {
+    content: "\f099"
+}
+
+    /* Facebook icon */
+.fa-facebook:before {
+    content: "\f09a"
+}
+
+    /* Instagram icon */
+.fa-instagram:before {
+    content: "\f16d"
+}
+
+    /* Dribble icon */
+.fa-dribbble:before {
+    content: "\f17d"
+}
+
+    /* Left & right arrow : Images visualisation PORTFOLIO */ 
+.fa-chevron-left:before {
+    content: "\f053"
+}
+.fa-chevron-right:before {
+    content: "\f054"
+}
+
+
+/* 
+    -  COLOR  -
+*/
+
+    /* Rectangles on banners */
+.black-background {
+    background-color: rgba(48, 48, 48, 0.9);
+    padding: 40px;
+}
+    
+    /*Background - primary color */
+.primary-color-bg--darker {
+    background-color: #c74e04;
+}
+
+    /* Button background */
+.btn-atomic-tangerine {
+    background: #c74e04; 
+    color: #FFFFFF!important;
+}
+
+    /* Button Hover background */
+.btn-atomic-tangerine:hover {
+    background: #f8ded2!important;
+    color: #c74e04!important;
+}
+
+    /* text on white background */
+.primary-color--darker {
+    color: #c74e04!important;
+}
+    /* text on black background */
+.primary-color {
+    color: #f7814a!important;
+}
+    /* Off-White color */
+.white {
+    color:rgb(238, 238, 238)!important;
+}
+
+
+/*
+    -  HEADER  - (Index & Contact)
 */
 
 .sr-only {
@@ -217,10 +384,6 @@ HEADER
 .presentation-title strong {
     font-size: 26px;
     font-weight: normal;
-}
-
-.bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
 }
 
 .presentation-logo {
@@ -391,7 +554,6 @@ a[data-lightbox]:hover img {
     -  PRESENTATION  - (Contact)
 */
 
-    /* Presentation */
 .contact-presentation p {
     font-size: 24px;
     padding-top: 20px;
@@ -402,71 +564,24 @@ a[data-lightbox]:hover img {
 */
 
 
+/*
+    -  FOOTER  -
+*/
 
-
-/* Button */
-button {
-    outline: none!important;
-}
-
-.btn-rd {
-    border-radius: 40px;
-}
-
-.form-control {
-    border-color: rgba(0, 0, 0, .1);
-    box-shadow: none;
-}
-
-.scrollToTop {
-    width: 40px;
-    height: 40px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    opacity: 0;
-    z-index: 500;
-    transition: all .3s ease-in-out;
-}
-
-.scrollToTop span {
-    margin-top: 6px;
-}
-
-
-/* Center "black-background" (banners) and portfolio */
-.tight-width-whitespace {
-    max-width: 650px;
+.social, .footer-text, .social__icon span {
+    color: white;
+    max-width: 600px;
     margin: auto;
+    text-align: center;
 }
 
-.cta-hero {
-    margin-top: 22px;
-    color: #FFFFFF!important;
-    text-transform: uppercase;
-    padding: 12px 28px 12px 28px;
-    font-size: 16px;
-    font-weight: 700;
-}
-
-
-
-
-.bg-dots-bg {
-    background-image: url("../img/dots-bg.png");
-}
-
-.bg-lines-h2-bg {
-    background-image: url("../img/lines-h2-bg.png");
-}
-
-.bg-banniere {
-    background-image: url("../img/la-chouette-agence-banniere.jpg");
-}
-
+.social__icon span {
+    font: normal 35px FontAwesome;
+    padding: 0 20px 0 20px;
+} 
 
 /*
-MEDIA QUERIES
+    -  MEDIA QUERIES  -
 */
 
 @media (max-width: 1024px) {
@@ -602,123 +717,4 @@ MEDIA QUERIES
         padding-left: 0;
         padding-right: 0;
     }
-}
-
-/*
-ET-LINE & SERVICES ICONS
-*/
-
-/* Services icons */
-.et-icon-browser, .et-icon-edit, .et-icon-presentation {
-    font-family: et-line;
-    font-size: 60px;
-    color: #364577;
-    text-shadow: 0 1px 2px rgba(0, 0, 0, .3);
-}
-
-/* "Web Design" icon */
-.et-icon-browser:before {
-    content: "\e00c"
-}
-/* "Stratégie" icon */
-.et-icon-presentation:before {
-    content: "\e00e"
-}
-/* "Illustrations" icon */
-.et-icon-edit:before {
-    content: "\e01c"
-}
-
-
-/*
-FOOTER
-*/
-.fa {
-    display: inline-block;
-    font: normal 14px FontAwesome;
-    font-size: inherit;
-    text-rendering: auto;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale
-}
-
-.social, .footer-text, .social__icon span {
-    color: white;
-    max-width: 600px;
-    margin: auto;
-    text-align: center;
-}
-
-.social__icon span {
-    font: normal 35px FontAwesome;
-    padding: 0 20px 0 20px;
-} 
-
-/* Twitter icon */
-.fa-twitter:before {
-    content: "\f099"
-}
-
-/* Facebook icon */
-.fa-facebook:before {
-    content: "\f09a"
-}
-
-/* Instagram icon */
-.fa-instagram:before {
-    content: "\f16d"
-}
-
-/* Dribble icon */
-.fa-dribbble:before {
-    content: "\f17d"
-}
-
-/* Left & right arrow : Images visualisation PORTFOLIO */ 
-.fa-chevron-left:before {
-    content: "\f053"
-}
-.fa-chevron-right:before {
-    content: "\f054"
-}
-
-
-
-
-/* Color */
-
-    /* Rectangles on banners */
-.black-background {
-    background-color: rgba(48, 48, 48, 0.9);
-    padding: 40px;
-}
-
-    /*Background - primary color */
-.primary-color-bg--darker {
-    background-color: #c74e04;
-}
-
-    /* Button background */
-.btn-atomic-tangerine {
-    background: #c74e04; 
-    color: #FFFFFF!important;
-}
-
-    /* Button Hover background */
-.btn-atomic-tangerine:hover {
-    background: #f8ded2!important;
-    color: #c74e04!important;
-}
-
-    /* text on white background */
-.primary-color--darker {
-    color: #c74e04!important;
-}
-    /* text on black background */
-.primary-color {
-    color: #f7814a!important;
-}
-    /* Off-White color */
-.white {
-    color:rgb(238, 238, 238)!important;
 }
