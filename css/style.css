@@ -1,8 +1,8 @@
 /*
-FONTS
+    -  FONTS  -
 */
 
-/* Services icons */
+    /* Services icons */
 @font-face {
     font-family: et-line;
     src: url(../fonts/et-line.eot);
@@ -14,7 +14,7 @@ FONTS
     font-style: normal
 }
 
-/* Arrow icons (Portfolio) & Social icons (Footer) */
+    /* Arrow icons (Portfolio) & Social icons (Footer) */
 @font-face {
     font-family: 'FontAwesome';
     src: url('../fonts/fontawesome-webfont.eot?v=4.7.0');
@@ -27,8 +27,8 @@ FONTS
 }
 
 
-/* 
-GENERAL
+/*
+    -  GENERAL  -
 */
 
 body {
@@ -53,16 +53,19 @@ a:hover {
     /* Text */
 p {
     font-size: 18px;
-    /*text-align: justify;*/
     line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
 }
 
 h2 {
     font-size: 35px;
     font-weight: bold;
     padding-bottom: 2rem;
-    color: #F3976C;
-    /*line-height: 1.4em;*/
 }
 
 h3 {
@@ -73,7 +76,7 @@ h3 {
 }
 
 
-/* Containers */
+    /* Containers */
 .bloc {
     width: 100%;
     clear: both;
@@ -100,6 +103,8 @@ h3 {
     padding: 50px;
 }
 
+    /* Background images & texture */
+    
 .bg-repeat {
     background: repeat;
 }
@@ -119,6 +124,8 @@ h3 {
     background-attachment: fixed;
 }
 
+
+/* voffset ???*/
 .voffset {
     margin-top: 30px;
 }
@@ -196,23 +203,16 @@ HEADER
     margin-right: 0;
 }
 
-/*
-PRESENTATION Index
-*/
-/*.presentation {
-    padding-top: 50px;
-    padding-bottom: 50px;
-}*/
 
-.presentation-title {
-    font-size: 45px;
-    font-weight: bold;
-    /*background-color: rgb(48, 48, 48, 0.8);*/
-    max-width: 530px;
-    /*padding: 40px;*/
+/*
+    -  PRESENTATION  - (Index)
+*/
+
+/*.presentation-title {
+   max-width: 530px;
     margin-left: auto;
     margin-right: auto;
-}
+}*/
 
 .presentation-title strong {
     font-size: 26px;
@@ -229,8 +229,9 @@ PRESENTATION Index
 
 
 /*
-SERVICES
+    -  SERVICES  - (Index)
 */
+
 .services-presentation, .portfolio-presentation {
     margin: auto;
 }
@@ -247,12 +248,12 @@ SERVICES
 
 
 /*
-AMBITIONS
+    -  AMBITIONS  - (Index)
 */
 
 
 /*
-PORTFOLIO
+    -  PORTFOLIO  - (Index)
 */
 
 .portfolio-presentation {
@@ -260,26 +261,17 @@ PORTFOLIO
     font-size: 2.2rem;
 }
 
-/*
-CONTACT (Index)
-*/
-
-
-
-
-
-/* titres portfolio */
+    /* titres portfolio */
 .mg-md {
     margin-top: 10px;
     margin-bottom: 20px;
 }
 
-/* portfolio organisé en 2 ligne => faire du flexbox ??????*/
+    /* portfolio organisé en 2 ligne => faire du flexbox ??????*/
 .portfolio-row {
     margin-bottom: 44px;
     margin-top: 50px;
 }
-
 
 a[data-lightbox] {
     position: relative;
@@ -390,6 +382,25 @@ a[data-lightbox]:hover img {
     background: none;
 }
 
+/*
+    -  CONTACT  - (Index)
+*/
+
+
+/*
+    -  PRESENTATION  - (Contact)
+*/
+
+    /* Presentation */
+.contact-presentation p {
+    font-size: 24px;
+    padding-top: 20px;
+}
+
+/*
+    -  FORM CONTACT  - (Contact)
+*/
+
 
 
 
@@ -422,12 +433,6 @@ button {
     margin-top: 6px;
 }
 
-/* ???? */
-a[data-lightbox] {
-    position: relative;
-    display: block;
-    text-align: center;
-}
 
 /* Center "black-background" (banners) and portfolio */
 .tight-width-whitespace {
@@ -444,11 +449,7 @@ a[data-lightbox] {
     font-weight: 700;
 }
 
-/* A RETIRER */
-.white {
-    color:rgb(238, 238, 238)!important;
-    /*color: #FFFFFF!important;*/
-}
+
 
 
 .bg-dots-bg {
@@ -673,7 +674,7 @@ FOOTER
     content: "\f17d"
 }
 
-/* Left & right arrow : Images visualisation  PORTFOLIO  !!!!!*/ 
+/* Left & right arrow : Images visualisation PORTFOLIO */ 
 .fa-chevron-left:before {
     content: "\f053"
 }
@@ -683,40 +684,41 @@ FOOTER
 
 
 
-/* FORM CONTACT*/
-label {
-    font-weight: normal;
-}
-
-
-
 
 /* Color */
+
+    /* Rectangles on banners */
 .black-background {
     background-color: rgba(48, 48, 48, 0.9);
-    /*background-color: rgba(165, 147, 99, 0.7);*/
     padding: 40px;
 }
 
-    /*Background primary color */
-.bg-primary-color {
-    background-color: #C3561A;
-    /*background-color: #F3976C;*/
+    /*Background - primary color */
+.primary-color-bg--darker {
+    background-color: #c74e04;
 }
 
-    /* text primary color */
-.primary-color {
-    /*color: #C3561A!important;*/
-    color: #F3976C!important;
-}
-
+    /* Button background */
 .btn-atomic-tangerine {
-    background: #C3561A; 
-    /*background: #F3976C;*/
+    background: #c74e04; 
     color: #FFFFFF!important;
 }
 
+    /* Button Hover background */
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    background: #f8ded2!important;
+    color: #c74e04!important;
+}
+
+    /* text on white background */
+.primary-color--darker {
+    color: #c74e04!important;
+}
+    /* text on black background */
+.primary-color {
+    color: #f7814a!important;
+}
+    /* Off-White color */
+.white {
+    color:rgb(238, 238, 238)!important;
 }
