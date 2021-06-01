@@ -76,40 +76,37 @@
 
 	<!-- CONTACT FORM -->   <!--Ajouter h2 !!! "Nous contacter" "nous trouver"-->
 	<section class="bloc l-bloc">
-		<div class="container bloc-lg">
-			<!--<div class="row">
-				<div class="col-sm-6">-->
-					<form id="form_1"> <!--novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
-						<div class="form-group">
-							<label>
-								Nom
-							</label>
-							<input id="name" class="form-control" required />
-						</div>
-						<div class="form-group">
-							<label>
-								Adresse email
-							</label>
-							<input id="email" class="form-control" type="email" required />
-						</div>
-						<div class="form-group">
-							<label>
-								Comment nous avez-vous connu ?
-							</label>
-							<input class="form-control" type="email" required id="input_504" />
-						</div>
-						<div class="form-group">
-							<label>
-								Brief de votre projet (Ajoutez autant de détails que nécessaire)
-							</label>
-							<textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-						</div> 
-						<button class="btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-							Envoyer
-						</button>
-					</form>
-				<!--</div>
-			</div>-->
+		<div class="form-contact container bloc-lg">
+			<p class="form-indication ">Tous les champs sont obligatoires</p>
+			<form id="form_1"> <!--novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!"-->
+				<div class="form-group">
+					<label for="name" >
+						Nom 
+					</label>
+					<input id="name" name="name" type="text" placeholder="Ex : Claire MARTIN - ou - Entreprise MARTIN " class="form-control" required />
+				</div>
+				<div class="form-group">
+					<label for="email">
+						Adresse email 
+					</label>
+					<input id="email" name="email" type="email" placeholder="Ex : entreprise-martin@gmail.com" class="form-control" required />
+				</div>
+				<div class="form-group">
+					<label for="input_504">
+						Comment nous avez-vous connu ? 
+					</label>
+					<input id="input_504" name="input_504" type="text" placeholder="Ex : site internet, réseaux sociaux, bouche à oreille, déjà client, etc." class="form-control" required />
+				</div>
+				<div class="form-group">
+					<label for="message">
+						Brief de votre projet (Ajoutez autant de détails que nécessaire) 
+					</label>
+					<textarea id="message" name="message" class="form-control" rows="8" cols="50" required></textarea>
+				</div> 
+				<button class="btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
+					Envoyer
+				</button>
+			</form>
 		</div>
 	</section>
 	<!-- CONTACT FORM END -->

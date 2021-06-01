@@ -246,6 +246,10 @@ button {
     font: normal 35px FontAwesome;
     padding: 0 20px 0 20px;
 } 
+.social__icon span:hover {
+    color :  rgba(48, 48, 48, 1);
+}
+
 .location-icon span {
     font: normal 20px FontAwesome; 
     padding-right: 10px;
@@ -580,6 +584,13 @@ a[data-lightbox]:hover img {
     -  CONTACT  - (Index)
 */
 
+.form-contact {
+    max-width: 800px;
+}
+
+.form-contact label {
+    font-size: 18px;
+}
 
 /*
     -  PRESENTATION  - (Contact)
@@ -594,6 +605,11 @@ a[data-lightbox]:hover img {
     -  FORM CONTACT  - (Contact)
 */
 
+.form-indication {
+    margin-bottom: 40px;
+    font-size: 16px;
+    color: #c74e04;
+}
 
 /*
     -  FOOTER  -
@@ -601,6 +617,7 @@ a[data-lightbox]:hover img {
 
 .footer-text {
     font-size: 20px;
+    margin-bottom: 0;
 }
 footer h2 {
     font-size: 22px;
@@ -643,7 +660,7 @@ footer h2 {
     }
 }
 
-/*utile ?
+
 @media (min-width: 768px) {
     .site-navigation {
         position: absolute;
@@ -683,7 +700,7 @@ footer h2 {
         float: none;
         margin: 10px auto 0;
     }
-}*/
+}
 
 
 @media (max-width: 767px) {
