@@ -611,6 +611,10 @@ a[data-lightbox]:hover img {
     color: #c74e04;
 }
 
+label span {
+    font-weight: normal;
+}
+
 /*
     -  FOOTER  -
 */
@@ -763,8 +767,12 @@ footer h2 {
         margin-top: 30px;
     }
     form {
-        padding: 5px;
+        padding: 10px;
     }
+    footer .row {
+        margin: 0;
+    }
+
 }
 
 @media (max-width: 400px) {
