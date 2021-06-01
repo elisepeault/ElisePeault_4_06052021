@@ -72,10 +72,11 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px;
     text-transform: uppercase;
     font-weight: 700;
     color: #333333!important;
+    line-height: 1.5;
 }
 
 /* Containers */
@@ -237,14 +238,10 @@ button {
 
 .footer-text, .social, .social__icon span, .location, .location p, .location-icon span {
     color: white;
-    /*max-width: 600px;
-    margin: auto;
-    text-align: center;*/
 }
 
 .social__icon span{
     font: normal 35px FontAwesome;
-    padding: 0 20px 0 20px;
 } 
 .social__icon span:hover {
     color :  rgba(48, 48, 48, 1);
@@ -434,7 +431,7 @@ button {
     margin: auto;
 }
 
-.services-presentation, .portfolio-presentation {
+.services-presentation, .portfolio-presentation{
     max-width: 640px;
     font-size: 2.2rem;
 }
@@ -453,11 +450,6 @@ button {
 /*
     -  PORTFOLIO  - (Index)
 */
-
-.portfolio-presentation {
-    max-width: 450px;
-    font-size: 2.2rem;
-}
 
     /* titres portfolio */
 .mg-md {
