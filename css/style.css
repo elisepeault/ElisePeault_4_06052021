@@ -192,7 +192,7 @@ button {
 }
 
 .bg-presentation {
-    background-image: url("../img/image-de-presentation.bmp");
+    background-image: url("../img/image-de-presentation.jpg");
 }
 
     /* voffset ???*/
@@ -475,6 +475,13 @@ button {
     margin-top: 50px;
    /* margin-left: auto;
     margin-right: auto;*/
+}
+
+    /* portfolio images dimensions*/
+.img-size {
+    height: 170px;
+    width: 100%;
+    object-fit: cover;
 }
 
 a[data-lightbox] {
