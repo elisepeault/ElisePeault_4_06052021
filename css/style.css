@@ -109,12 +109,8 @@ h3 {
 
     /* Center "black-background" (banners) and portfolio */
 .tight-width-whitespace {
-    max-width: 650px;
+    max-width: 700px;
     margin: auto;
-}
-
-.img-responsive {
-    width: 100%;
 }
 
 /* Buttons */
@@ -474,11 +470,11 @@ button {
 
     /* portfolio organised in 2 rows */
 .portfolio-row {
-    max-width: 900px;
+    /*max-width: 700px;*/
     margin-bottom: 44px;
     margin-top: 50px;
-    margin-left: auto;
-    margin-right: auto;
+   /* margin-left: auto;
+    margin-right: auto;*/
 }
 
 a[data-lightbox] {
@@ -528,13 +524,10 @@ a[data-lightbox]:hover img {
 }
 
 .lightbox-caption {
-    padding: 20px;
-    color: #FFF;
-    background: rgba(0, 0, 0, .5);
-    position: absolute;
-    left: 15px;
-    right: 15px;
-    bottom: 5px;
+    margin: 0;
+    padding: 10px 10px 0 10px;
+    color: black;
+    text-align: center;
 }
 
 .close-lightbox {
@@ -580,15 +573,6 @@ a[data-lightbox]:hover img {
     left: 25px;
 }
 
-.snapshot-lb .modal-body {
-    padding-bottom: 45px;
-}
-
-.snapshot-lb .lightbox-caption {
-    padding: 0;
-    color: rgba(0, 0, 0, .5);
-    background: none;
-}
 
 /*
     -  CONTACT  - (Index)
@@ -741,8 +725,10 @@ footer h2 {
         position: relative;
     }
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding : 15px;
+    }
+    .black-background {
+        padding: 15px;
     }
     h1, h2, h3, h4, h5, h6, p {
         padding-left: 10px!important;
@@ -794,9 +780,14 @@ footer h2 {
     .voffset-lg {
         margin-top: 30px;
     }
+
     .portfolio-row {
         margin-bottom: 0;
         margin-top: 0;
+    }
+    .img-responsive-mobile {
+    max-width: 320px;
+    margin: auto;
     }
     form {
         padding: 10px;
@@ -813,7 +804,13 @@ footer h2 {
 
 @media (max-width: 400px) {
     .bloc {
-        padding-left: 0;
-        padding-right: 0;
+        padding: 5px;
     }
+    .black-background {
+        padding: 5px;
+    }
+    .img-responsive-mobile {
+        max-width: 100%;
+        /*margin: auto;*/
+        }
 }
