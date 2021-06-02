@@ -134,12 +134,15 @@ button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    /*opacity: 0;*/
+    opacity: 1;
     z-index: 500;
     transition: all .3s ease-in-out;
-    background-color: rgba(48, 48, 48, 0.6);
-    color: white;
     border-radius: 50%;
+}
+
+.scrollToTop:hover {
+    background-color: rgba(48, 48, 48, 0.5);
+    color: white;
 }
 
 .scrollToTop span {
@@ -786,6 +789,10 @@ footer h2 {
     }
     form {
         padding: 10px;
+    }
+    .scrollToTop {
+        bottom: 0;
+        right: 0;
     }
     footer .row {
         margin: 0;
