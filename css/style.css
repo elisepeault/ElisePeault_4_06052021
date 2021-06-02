@@ -100,7 +100,6 @@ h3 {
 
 .bloc-lg {
     padding: 50px 50px;
-    /*padding: 100px 50px;*/
 }
 
 .bloc-md {
@@ -195,15 +194,6 @@ button {
     background-image: url("../img/image-de-presentation.webp");
 }
 
-    /* voffset ???*/
-.voffset {
-    margin-top: 30px;
-}
-
-.voffset-lg {
-    margin-top: 80px;
-}
-
 
 /*
     -  ET-LINE - Services icons  -
@@ -262,17 +252,14 @@ button {
 .fa-twitter:before {
     content: "\f099"
 }
-
     /* Facebook icon */
 .fa-facebook:before {
     content: "\f09a"
 }
-
     /* Instagram icon */
 .fa-instagram:before {
     content: "\f16d"
 }
-
     /* Dribble icon */
 .fa-dribbble:before {
     content: "\f17d"
@@ -297,7 +284,6 @@ button {
 .fa-chevron-right:before {
     content: "\f054"
 }
-
     /* Up arrow : Scroll to top button */ 
 .fa-chevron-up:before {
     content: "\f077"
@@ -407,7 +393,7 @@ button {
     background-color: rgba(0, 0, 0, .5);
     width: 26px;
 }
-/*utile ?*/
+
 .navbar.row {
     margin-left: 0;
     margin-right: 0;
@@ -417,12 +403,6 @@ button {
 /*
     -  PRESENTATION  - (Index)
 */
-
-/*.presentation-title {
-   max-width: 530px;
-    margin-left: auto;
-    margin-right: auto;
-}*/
 
 .presentation-title strong {
     font-size: 26px;
@@ -439,7 +419,7 @@ button {
 
 .services-presentation, .portfolio-presentation{
     max-width: 640px;
-    font-size: 2.2rem;
+    font-size: 22px;
 }
 
 .services-quote blockquote p {
@@ -447,10 +427,13 @@ button {
     font-size: 22px;
 }
 
+.voffset {
+    margin-top: 30px;
+}
 
-/*
-    -  AMBITIONS  - (Index)
-*/
+.voffset-lg {
+    margin-top: 80px;
+}
 
 
 /*
@@ -465,11 +448,8 @@ button {
 
     /* portfolio organised in 2 rows */
 .portfolio-row {
-    /*max-width: 700px;*/
     margin-bottom: 44px;
     margin-top: 50px;
-   /* margin-left: auto;
-    margin-right: auto;*/
 }
 
     /* portfolio images dimensions*/
@@ -639,23 +619,11 @@ footer h2 {
     -  MEDIA QUERIES  -
 */
 
-/*@media (min-width:768px) {
+@media (min-width: 1200px) {
     .container {
-        width: 100%;
+        width: auto;
     }
 }
-
-@media (min-width:992px) {
-    .container {
-        width: 100%;
-    }
-}
-
-@media (min-width:1200px) {
-    .container {
-        width: 100%;
-    }
-*/
 
 @media (max-width: 1024px) {
     .bloc {
@@ -732,6 +700,9 @@ footer h2 {
     .header-bloc {
         padding: 0!important;
     }
+    blockquote {
+        width: 100%;
+    }
     .black-background {
         padding: 15px;
     }
@@ -804,6 +775,48 @@ footer h2 {
     footer .row {
         margin: 0;
     }
+    h1 {
+        font-size: 35px;
+    }
+    h2 {
+        font-size: 27px;
+    }
+    h3 {
+        font-size: 17px;
+    }
+    .mg-md {
+        margin-bottom: 10px;
+    }
+    .presentation-title strong {
+        font-size: 18px;
+    }
+    .services-presentation {
+        font-size: 20px;
+    }
+    .services-quote blockquote p {
+        font-size: 18px;
+    }
+    .portfolio-presentation {
+        font-size: 20px;
+    }
+    .contact-presentation p {
+        font-size: 20px;
+    }
+    .footer-text {
+        font-size: 18px; 
+    }
+    .col-sm-6 {
+        padding: 0;
+    }
+    footer p {
+        font-size: 17px; 
+    }
+    .social h2 {
+        margin-bottom: 10px;
+    }
+    .img-responsive-mobile {
+        margin-top: 30px;
+    }
 
 }
 
@@ -819,6 +832,37 @@ footer h2 {
     }
     .img-responsive-mobile {
         max-width: 100%;
-        /*margin: auto;*/
-        }
+        /*margin: auto;*/       
+    }
 }
+
+/*
+p {
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+h1 {
+    font-size: 45px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 35px;
+    font-weight: bold;
+    padding-bottom: 2rem;
+}
+
+h3 {
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: #333333!important;
+    line-height: 1.5;
+}
+*/
+/*.row {
+    margin-right: 0;
+    margin-left: 0;
+}*/
