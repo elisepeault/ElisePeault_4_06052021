@@ -113,6 +113,10 @@ h3 {
     margin: auto;
 }
 
+.img-responsive {
+    width: 100%;
+}
+
 /* Buttons */
 
 button {
@@ -468,10 +472,13 @@ button {
     margin-bottom: 20px;
 }
 
-    /* portfolio organisé en 2 ligne => faire du flexbox ??????*/
+    /* portfolio organised in 2 rows */
 .portfolio-row {
+    max-width: 900px;
     margin-bottom: 44px;
     margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 a[data-lightbox] {
@@ -786,6 +793,10 @@ footer h2 {
     }
     .voffset-lg {
         margin-top: 30px;
+    }
+    .portfolio-row {
+        margin-bottom: 0;
+        margin-top: 0;
     }
     form {
         padding: 10px;
