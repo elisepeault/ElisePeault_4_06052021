@@ -729,6 +729,9 @@ footer h2 {
     .bloc {
         padding : 15px;
     }
+    .header-bloc {
+        padding: 0!important;
+    }
     .black-background {
         padding: 15px;
     }
@@ -806,6 +809,9 @@ footer h2 {
 
 @media (max-width: 400px) {
     .bloc {
+        padding: 5px;
+    }
+    .col-sm-12 {
         padding: 5px;
     }
     .black-background {
