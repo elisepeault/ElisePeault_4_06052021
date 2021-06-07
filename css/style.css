@@ -816,8 +816,7 @@ footer h2 {
         padding: 5px;
     }
     .img-responsive-mobile {
-        max-width: 100%;
-        /*margin: auto;*/       
+        max-width: 100%;   
     }
     .bg-banniere, .bg-presentation  {
         max-width: 400px;
